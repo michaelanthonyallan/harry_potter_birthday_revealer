@@ -15,16 +15,17 @@ class AppContainer extends Component {
 
     static characterNumberGenerator(props) {
         console.log(props);
-        let i = (props.month * props.day * props.year);
+        // let i = (props.month * props.day * props.year);
+        let i = (props.month * props.day);
         let result = '';
         do {
-            if (i <= 194){
+            if (i <= 24){
                 result = i;
                 break;
             }
             else{
-                for (i; i >= 104; i*=0.10){
-                    if(i<=194){
+                for (i; i >= 24; i*=0.5){
+                    if(i<=24){
                         result = i;
                         break;
                     }
@@ -35,7 +36,7 @@ class AppContainer extends Component {
 
             result = i;
         }
-        while (i > 194);
+        while (i > 24);
         return Math.round(result);
     }
 
