@@ -14,7 +14,7 @@ const CharacterComponent = (props) => {
             <h3>Wand: {props.wand.wood} Core: {props.wand.core}</h3>
             <h3> Ancestry: {props.character.ancestry} </h3>
             <h4> Species: {props.character.species} </h4>
-            <img src={props.character.image} alt={props.character.name} />
+            <img src={props.character.image} alt={props.character.name} height={340} width={240} />
         </div>
     )
 
