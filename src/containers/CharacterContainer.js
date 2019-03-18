@@ -15,7 +15,7 @@ class CharacterContainer extends Component{
     // const key = "$2a$10$VR.iXPk3xI.np7Icd5gF.OP70pCigCCqEgYcTso8Dn1Kfc09hMjdi";
     //     fetch(`https://www.potterapi.com/v1/characters?key=${key}`)
     //     fetch(`https://www.potterapi.com/v1/characters`)
-        fetch(`http://hp-api.herokuapp.com/api/characters`)
+        fetch(`https://hp-api.herokuapp.com/api/characters`)
            .then(response => response.json())
             .then(data => this.setState({character: data[this.props.characterNumber.characterNumber], wand:data[this.props.characterNumber.characterNumber].wand}));
      }
